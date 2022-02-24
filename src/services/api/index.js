@@ -3,8 +3,8 @@ const API_VERSION = process.env.NEXT_PUBLIC_API_VERSION;
 
 const endPoints = {
   auth: {
-    login: `${API_URL}api/${API_VERSION}/auth/login`,
-    profile: `${API_URL}api/${API_VERSION}/auth/profile`,
+    login: `${API_URL}/api/${API_VERSION}/auth/login`,
+    profile: `${API_URL}/api/${API_VERSION}/auth/profile`,
   },
   products: {
     getProducts: (limit, offset) => `${API_URL}api/${API_VERSION}/products?${limit}=2&${offset}=2`,
